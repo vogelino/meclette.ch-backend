@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "spots",
+  "info": {
+    "name": "spot"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "latitude": {
+      "type": "float",
+      "required": true,
+      "max": 90,
+      "min": -90
+    },
+    "longitude": {
+      "type": "float",
+      "required": true,
+      "max": 180,
+      "min": -180
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
